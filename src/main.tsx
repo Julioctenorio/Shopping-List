@@ -1,16 +1,15 @@
-import { createRoot } from 'react-dom/client'
-import { BrowserRouter, Routes, Route  } from "react-router";
-import About from './pages/About.tsx'
-import App from './pages/App.tsx'
-import './index.css'
+import { createRoot } from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router";
+import About from "./pages/About.tsx";
+import App from "./App.tsx";
+import "./index.css";
 
-
-createRoot(document.getElementById('root')!).render(
+createRoot(document.getElementById("root")!).render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />}/>
+      <Route path="/" element={<App />} />
       <Route path="/Home" element={<App />} />
       <Route path="/About" element={<About />} />
     </Routes>
   </BrowserRouter>
-)
+);

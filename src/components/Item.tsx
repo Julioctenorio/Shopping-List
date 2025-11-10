@@ -24,7 +24,7 @@ export function ItemProps(props: ItemPropss) {
       {props.checked ? (
         <img
           className="w-6 h-6 flex items-center cursor-pointer ml-[6px] mt-2"
-          src="../assets/images/c-image.png"
+          src="https://images.seeklogo.com/logo-png/19/2/continente-hipermercados-logo-png_seeklogo-198420.png"
           alt="checked"
           onClick={props.checkbox}
         />

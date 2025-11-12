@@ -4,7 +4,7 @@ import ListItems from "./components/List-items";
 function App() {
   return (
     <>
-      <div className="w-dvw h-dvh flex items-center flex-col bg-[#FF3131] overflow-hidden">
+      <div className="w-dvw h-dvh flex items-center flex-col bg-gradient-to-b from-[#ff0000] to-[#fc7d7d] overflow-hidden">
         <div className=" flex flex-col text-left h-36 pt-12 mr-20 text-white md:mr-48 xl:mr-36">
           <h1 className="w-full text-shadow-md ml-3 xl:ml-[5px]">
             <svg

@@ -30,7 +30,7 @@ export default function Modal(prop: {
 
   return (
     <div className="flex justify-center bg-opacity-40 backdrop-brightness-[.2] w-full h-full fixed top-0 left-0 z-50">
-      <div className="flex flex-col w-80 h-72 absolute top-40 bg-[#FF3131] text-zinc-100 border-none rounded-3xl md:w-96 xl:w-96 xl:h-80">
+      <div className="flex flex-col w-80 h-72 absolute top-40 bg-[#FF3131] text-zinc-100 shadow-2xl border-none rounded-3xl md:w-96 xl:w-96 xl:h-80">
         <div className="popup-overly">
           <div className="popup-content">
             <button
@@ -48,13 +48,13 @@ export default function Modal(prop: {
                 <div className="flex justify-around mt-6 md: xl:px-6">
                   <button
                     onClick={prop.closeModal}
-                    className="bg-red-600 w-32 h-10 rounded-full hover:bg-red-700 active:scale-95 shadow-lg flex items-center justify-center text-zinc-100 transition-all duration-300 xl:w-36 xl:h-12"
+                    className="bg-red-600 w-32 h-10 rounded-full border-2 border-red-700 hover:bg-red-700  active:scale-95 shadow-lg flex items-center justify-center text-zinc-100 transition-all duration-300 xl:w-36 xl:h-12"
                   >
                     Não
                   </button>
                   <button
                     onClick={() => prop.confirm?.()}
-                    className="bg-green-600 w-32 h-10 rounded-full hover:bg-green-700 active:scale-95 shadow-lg flex items-center justify-center text-zinc-100 transition-all duration-300 xl:w-36 xl:h-12"
+                    className="bg-green-600 w-32 h-10 rounded-full border-2 border-green-700 hover:bg-green-700 active:scale-95 shadow-lg flex items-center justify-center text-zinc-100 transition-all duration-300 xl:w-36 xl:h-12"
                   >
                     Sim
                   </button>
